@@ -1,0 +1,42 @@
+{
+  "name": "@mateproject/contracts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "test:testnet": "npx hardhat test --network testnet",
+    "deploy": "npx hardhat deploy --network",
+    "verify": "npx hardhat etherscan-verify --network",
+    "deploy-farm": "npx hardhat run scripts/deploy-farm.js --network"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/register": "^7.13.16",
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+    "@nomiclabs/hardhat-etherscan": "^2.1.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "ethereum-waffle": "^3.3.0",
+    "hardhat": "2.6.1",
+    "hardhat-abi-exporter": "2.2.1",
+    "hardhat-deploy": "^0.7.5",
+    "hardhat-deploy-ethers": "^0.3.0-beta.10",
+    "hardhat-log-remover": "^2.0.1",
+    "hardhat-tracer": "^1.0.0-alpha.6"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.1.0",
+    "chalk": "^4.1.1",
+    "dotenv": "^10.0.0",
+    "ethers": "^5.3.1"
+  }
+}
